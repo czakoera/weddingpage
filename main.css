@@ -1,0 +1,128 @@
+/* font-family: 'Great Vibes', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Muli', sans-serif; 
+
+default text color: #444349 (grey)
+alternate text color: #d2ba87 (gold)
+dark background: hsla(100,0%,0%,.6);
+link color: #bd806e
+link color on hover: #eda087
+footer background color: #606060
+
+*/
+
+/* ==== GENERAL STYLES ==== */
+
+*{
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+}
+
+/* ==== HEADER CSS ==== */
+
+.cover {
+  background: url(assets/wedding-landing-cover.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  color: hsla(0,0%,100%,.7);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 28vh;
+    background-color: hsla(100,0%,0%,.6);
+    padding:0;
+    
+    display: table;
+    text-align: center;
+}
+
+.text{
+    height: 100%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2rem;
+    letter-spacing: .125rem;
+    padding: .667rem;
+    font-size: 100%;
+}
+
+.tagline{
+    display:block;
+    font-size: 1.5rem;
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+    padding: 0;
+    vertical-align:baseline;
+}
+
+.tagline::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 12.515625rem;
+    margin: .4rem auto;
+}
+
+.headline{
+    font-size: 3rem;
+    font-family: 'Great Vibes', cursive;
+    margin:1.8rem auto 1.2rem;
+    color: #d2ba87;
+}
+
+.date{
+   font-size: 1.5rem; 
+    'Libre Baskerville', serif;
+    margin-bottom: .6rem;
+}
+
+.date::before, .date::after {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 .5rem;
+}
+
+@media screen and (min-width:768px){
+    
+    .wrapper{
+        width: 50vw;
+        height: 70vh;
+        border-radius: 5px;
+    }
+    
+    .text{
+        margin:.125rem auto;
+        border-radius: 5px;
+        vertical-align: baseline;
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+    
+    .tagline{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+       
+    }
+    
+    .headline{
+        font-size:7rem;
+    }
+    
+    .date{
+        font-size: 2rem;
+        
+}   
+
+@media screen and (min-width:955px)
